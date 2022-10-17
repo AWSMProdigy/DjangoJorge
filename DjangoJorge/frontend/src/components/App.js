@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import Listings from './Pages/Listings';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import Footer from './Pages/Footer'
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/About' component={About}/>
           <Route path='/Contact' component={Contact}/>
         </Switch>
+        <Footer/>
       </Router>
       </>
     );

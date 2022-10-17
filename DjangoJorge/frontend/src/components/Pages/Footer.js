@@ -34,7 +34,7 @@ function Footer() {
                 <div className="social-media-wrap">
                     <div className="footer-logo">
                         <Link className="social-logo" to="/">
-                            Jorge Sousa <i className='fab fa-typo3'/>
+                            Jorge Sousa
                         </Link>
                     </div>
                     <small className='website-rights'>JSousa INC</small>

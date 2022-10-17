@@ -66,6 +66,20 @@
     transition: all 0.3 ease-out;
 }
 
+.btn--cover{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--primary);
+  font-size: 50px;
+  transition: .5s;
+}
+
+.btn--cover:hover{
+  background-color:#fff;
+  color: black;
+  
+}
+
 .btn-medium {
     padding: 8px 20px;
     font-size: 18px;
@@ -255,6 +269,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  
 }
 
 .footer-subscription{
@@ -414,8 +433,7 @@
 } 
 
 .listing-container{
-    height:100vh;
-    width: 100%;
+    background-image: url('../images/Platinum.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,7 +445,7 @@
 .listing-container > h1 {
     color: #fff;
     font-size: 100px;
-    margin-top: -100px;
+    margin-top: 50px;
 }
 
 .listing-container > p {
@@ -438,6 +456,7 @@
 }
 
 .listing-btns{
+    max-width: 60%;
     margin-top: 32px;
 }
 
@@ -452,14 +471,14 @@
 @media screen and (max-width: 960px) {
     .listing-container > h1 {
         font-size: 100px;
-        margin-top: -100px;
+        /* margin-top: -100px; */
     }
 }
 
 @media screen and (max-width: 768px) {
     .listing-container > h1{
         font-size: 50px;
-        margin-top: -100px;
+        /* margin-top: -100px; */
     }
 
     .listing-container > p {
@@ -490,10 +509,10 @@
   
   .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
-    max-width: 1500px;
+    width: 100%;
   }
   
   .navbar-logo {
@@ -504,7 +523,6 @@
     text-decoration: none;
     font-size: 2rem;
     display: flex;
-    align-items: center;
   }
   
   .fa-typo3 {
@@ -592,10 +610,13 @@
     }
   
     .navbar-logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
+      color: #fff;
+      justify-self: start;
+      margin-left: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 2rem;
+      display: flex;
     }
   
     .menu-icon {
@@ -634,3 +655,87 @@
       transition: 250ms;
     }
   }
+
+  .formC{
+    width:100%;
+  }
+
+  .rows{
+    height:100%;
+    width:100%;
+    display:block;
+  
+  }
+  .column{
+      margin: auto;
+      width:30%;
+      display:inline-block;
+      
+  }
+
+  .headshot{
+    border-radius: 50%;
+    border: #fff;
+    max-width:100%;
+    max-height: 70%;
+    border: 5px solid #fff;
+  }
+
+  .About-container{
+    justify-content: center;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .About-pic{ 
+    vertical-align: middle;
+    max-width: 60%;
+    height: auto;
+  }
+
+  .About-text{
+    max-width: 90%;
+    height: auto;
+  }
+
+
+  .About-text-container{
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    vertical-align: center;
+    display: flex;
+    float: right;
+  }
+
+  .loc-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    margin:auto;
+    flex-wrap: wrap;
+  }
+
+  .loc{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    flex-basis: 33.333%;
+  }
+
+  .loc > h2{
+   color: gray;
+  }
+
+  .loc > h3{
+    color: #1f98f4;
+
+  }
+
+
+
+  

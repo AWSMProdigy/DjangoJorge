@@ -24,6 +24,12 @@
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.0",
+    "caniuse-lite": "^1.0.30001420",
+    "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
+    "jquery": "^3.6.0",
     "react-router-dom": "^5.2.0"
   }
 }
