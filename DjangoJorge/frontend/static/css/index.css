@@ -432,8 +432,17 @@
     z-index: -1;
 } 
 
+.parallax{
+  background-image: url('../images/Platinum.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .listing-container{
-    background-image: url('../images/Platinum.jpg');
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,6 +504,12 @@
     }
 }
 
+.tagLine{
+  flex: 1;
+  color: white;
+  font-style: italic;
+}
+
 .navbar {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     height: 80px;
@@ -509,13 +524,14 @@
   
   .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 80px;
     width: 100%;
   }
   
   .navbar-logo {
+    flex: 1;
     color: #fff;
     justify-self: start;
     margin-left: 20px;
@@ -531,6 +547,7 @@
   }
   
   .nav-menu {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -538,7 +555,6 @@
     text-align: center;
     width: 60vw;
     justify-content: end;
-    margin-right: 2rem;
   }
   
   .nav-item {
@@ -568,6 +584,7 @@
   }
   
   .menu-icon {
+    flex: 1;
     display: none;
   }
   
@@ -577,6 +594,7 @@
     }
   
     .nav-menu {
+      flex: 1;
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -589,6 +607,7 @@
     }
   
     .nav-menu.active {
+      flex: 1;
       background: #242222;
       left: 0;
       opacity: 1;
@@ -620,11 +639,10 @@
     }
   
     .menu-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
+      flex: 1;
+      display: flex;
+      justify-content: end;
+      /* transform: translate(-100%, 60%); */
       font-size: 1.8rem;
       cursor: pointer;
     }
@@ -676,8 +694,8 @@
   .headshot{
     border-radius: 50%;
     border: #fff;
-    max-width:100%;
-    max-height: 70%;
+    width: 400px;
+    height: 400px;
     border: 5px solid #fff;
   }
 

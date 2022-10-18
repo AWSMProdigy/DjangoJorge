@@ -17,6 +17,7 @@ function NavBar() {
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         Jorge Sousa
                     </Link>
+                    <h1 className='tagLine'>Let's Make The Move Together</h1>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
