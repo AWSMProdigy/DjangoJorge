@@ -1,6 +1,6 @@
 import React from 'react';
 // import '../App.css';
-import Cards from '../Cards';
+import Featured from '../Featured';
 import {Button} from '../Button'
 
 
@@ -16,7 +16,7 @@ function Home(){
                     buttonSize='btn--large'  toLink='/About'>Why Go With Jorge?</Button>  
                 </div>
             </div>
-            <Cards/>
+            <Featured></Featured>
         </div>
     );
 

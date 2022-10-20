@@ -587,6 +587,16 @@
     flex: 1;
     display: none;
   }
+
+  .featuredHomes{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .featuredRow{
+    display: flex;
+    flex-direction: row;
+  }
   
   @media screen and (max-width: 960px) {
     .NavbarItems {
@@ -598,7 +608,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
       position: absolute;
       top: 80px;
       left: -100%;
@@ -645,8 +654,9 @@
       /* transform: translate(-100%, 60%); */
       font-size: 1.8rem;
       cursor: pointer;
+      margin-right: 20px;
     }
-  
+
     .fa-times {
       color: #fff;
       font-size: 2rem;
