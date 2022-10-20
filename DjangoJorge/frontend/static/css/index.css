@@ -588,14 +588,18 @@
     display: none;
   }
 
+  .featured{
+    background-color: white;
+  }
+
   .featuredHomes{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .featuredRow{
-    display: flex;
-    flex-direction: row;
+  .featuredHomes > *{
+    flex: 1 0 20%;
   }
   
   @media screen and (max-width: 960px) {
@@ -681,6 +685,16 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+
+    .featuredHomes > * {
+      flex-basis: 34%;
+    }
+  }
+
+  @media ( max-width: 320px) {
+    .featuredHomes > * {
+      flex-basis: 51%;
     }
   }
 
