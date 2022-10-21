@@ -193,8 +193,10 @@
   
   .cards__item__text {
     color: #252e48;
-    font-size: 18px;
-    line-height: 24px;
+  }
+
+  .cardSpan{
+    font-weight: bolder;
   }
   
   @media only screen and (min-width: 1200px) {
@@ -593,13 +595,32 @@
   }
 
   .featuredHomes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px 300px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .featuredHomes{
+      grid-template-columns: 300px 300px 300px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .featuredHomes{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .featuredHomes{
+      grid-template-columns: 1fr;
+    }
   }
 
   .featuredHomes > *{
-    flex: 1 0 20%;
+    margin-bottom: 20px;
   }
   
   @media screen and (max-width: 960px) {
@@ -692,7 +713,7 @@
     }
   }
 
-  @media ( max-width: 320px) {
+  @media ( max-width: 600px) {
     .featuredHomes > * {
       flex-basis: 51%;
     }
