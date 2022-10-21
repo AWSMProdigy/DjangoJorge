@@ -796,7 +796,11 @@
 
   .loc > h3{
     color: #1f98f4;
+  }
 
+  .header_search{
+    display: flex;
+    justify-content: space-around;
   }
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import GoogleMapReact from 'google-maps-react';
+import CardItem from '../CardItem';
 export default class Listings extends React.Component{
    
     state = {
@@ -22,16 +23,27 @@ export default class Listings extends React.Component{
     render(){
     return (
         <div className="loc-container">
-            {this.state.listings.map((listing, id) =>  (
-            <div key={id} className="loc">
-                  <div className="loc">
-                        <h1>{listing.Address}</h1>
-                        <h2>{listing.City}, {listing.State}</h2>
-                         <h3>${listing.Price}</h3>
-                  </div>
+            <div className='featured'>
+            <div className='header_search'>
+                <textarea style={{visibility: "hidden"}}>Search</textarea>
+                <h1>Featured Homes</h1>
+                <textarea>Search</textarea>
             </div>
-            )
-        )}
+            <div className='featuredHomes'>
+                <CardItem src={require("../../images/img-2.jpg").default} price="245,000" address="420 Pog Avenue" bed="3" bath="2" sqft="1400" text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+            </div>
+            <h1>Featured Land</h1>
+            <div className='featuredHomes'>
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                <CardItem src={require("../../images/img-2.jpg").default} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+            </div>
+        </div>
       </div>
     )
     }
