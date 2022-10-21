@@ -594,6 +594,11 @@
     background-color: white;
   }
 
+  .featured h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   .featuredHomes{
     display: grid;
     justify-content: center;
@@ -775,7 +780,7 @@
 
   .loc-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: auto;
     width: 90%;

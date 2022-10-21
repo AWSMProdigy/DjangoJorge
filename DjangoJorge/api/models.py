@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 from django.db import models
 
 # Create your models here.
@@ -15,5 +16,10 @@ class Listing(models.Model):
     Bed = models.CharField(max_length=2)
     Bath = models.CharField(max_length=2)
     created_at = models.DateTimeField(auto_now_add=True)
+    description = models.CharField(max_length=2000)
+    sqft = models.CharField(max_length=8)
+    year = models.CharField(max_length=4)
+    status = models.CharField(max_length=50)
+
 
     
